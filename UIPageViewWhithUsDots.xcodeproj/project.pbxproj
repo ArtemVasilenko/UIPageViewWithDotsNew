@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AC5DCC9E224A9993000032CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DCC9D224A9993000032CF /* AppDelegate.swift */; };
-		AC5DCCA0224A9993000032CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DCC9F224A9993000032CF /* ViewController.swift */; };
 		AC5DCCA3224A9993000032CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5DCCA1224A9993000032CF /* Main.storyboard */; };
 		AC5DCCA5224A9996000032CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5DCCA4224A9996000032CF /* Assets.xcassets */; };
 		AC5DCCA8224A9996000032CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5DCCA6224A9996000032CF /* LaunchScreen.storyboard */; };
+		AC5DCCB0224A9BF8000032CF /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DCCAF224A9BF8000032CF /* MyPageViewController.swift */; };
+		AC5DCCB2224A9C0B000032CF /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DCCB1224A9C0B000032CF /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC5DCC9A224A9993000032CF /* UIPageViewWhithDots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPageViewWhithDots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5DCC9A224A9993000032CF /* UIPageViewWhithUsDots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPageViewWhithUsDots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5DCC9D224A9993000032CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC5DCC9F224A9993000032CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC5DCCA2224A9993000032CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC5DCCA4224A9996000032CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5DCCA7224A9996000032CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5DCCA9224A9996000032CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5DCCAF224A9BF8000032CF /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		AC5DCCB1224A9C0B000032CF /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 		AC5DCC91224A9993000032CF = {
 			isa = PBXGroup;
 			children = (
-				AC5DCC9C224A9993000032CF /* UIPageViewWhithDots */,
+				AC5DCC9C224A9993000032CF /* UIPageViewWhithUsDots */,
 				AC5DCC9B224A9993000032CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +48,31 @@
 		AC5DCC9B224A9993000032CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC5DCC9A224A9993000032CF /* UIPageViewWhithDots.app */,
+				AC5DCC9A224A9993000032CF /* UIPageViewWhithUsDots.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC5DCC9C224A9993000032CF /* UIPageViewWhithDots */ = {
+		AC5DCC9C224A9993000032CF /* UIPageViewWhithUsDots */ = {
 			isa = PBXGroup;
 			children = (
+				AC5DCCAF224A9BF8000032CF /* MyPageViewController.swift */,
+				AC5DCCB1224A9C0B000032CF /* MyViewController.swift */,
 				AC5DCC9D224A9993000032CF /* AppDelegate.swift */,
-				AC5DCC9F224A9993000032CF /* ViewController.swift */,
 				AC5DCCA1224A9993000032CF /* Main.storyboard */,
 				AC5DCCA4224A9996000032CF /* Assets.xcassets */,
 				AC5DCCA6224A9996000032CF /* LaunchScreen.storyboard */,
 				AC5DCCA9224A9996000032CF /* Info.plist */,
 			);
-			path = UIPageViewWhithDots;
+			path = UIPageViewWhithUsDots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC5DCC99224A9993000032CF /* UIPageViewWhithDots */ = {
+		AC5DCC99224A9993000032CF /* UIPageViewWhithUsDots */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC5DCCAC224A9996000032CF /* Build configuration list for PBXNativeTarget "UIPageViewWhithDots" */;
+			buildConfigurationList = AC5DCCAC224A9996000032CF /* Build configuration list for PBXNativeTarget "UIPageViewWhithUsDots" */;
 			buildPhases = (
 				AC5DCC96224A9993000032CF /* Sources */,
 				AC5DCC97224A9993000032CF /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = UIPageViewWhithDots;
+			name = UIPageViewWhithUsDots;
 			productName = UIPageViewWhithDots;
-			productReference = AC5DCC9A224A9993000032CF /* UIPageViewWhithDots.app */;
+			productReference = AC5DCC9A224A9993000032CF /* UIPageViewWhithUsDots.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC5DCC95224A9993000032CF /* Build configuration list for PBXProject "UIPageViewWhithDots" */;
+			buildConfigurationList = AC5DCC95224A9993000032CF /* Build configuration list for PBXProject "UIPageViewWhithUsDots" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC5DCC99224A9993000032CF /* UIPageViewWhithDots */,
+				AC5DCC99224A9993000032CF /* UIPageViewWhithUsDots */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5DCCA0224A9993000032CF /* ViewController.swift in Sources */,
 				AC5DCC9E224A9993000032CF /* AppDelegate.swift in Sources */,
+				AC5DCCB2224A9C0B000032CF /* MyViewController.swift in Sources */,
+				AC5DCCB0224A9BF8000032CF /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIPageViewWhithDots/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UIPageViewWhithUsDots/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIPageViewWhithDots/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UIPageViewWhithUsDots/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC5DCC95224A9993000032CF /* Build configuration list for PBXProject "UIPageViewWhithDots" */ = {
+		AC5DCC95224A9993000032CF /* Build configuration list for PBXProject "UIPageViewWhithUsDots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC5DCCAA224A9996000032CF /* Debug */,
@@ -324,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC5DCCAC224A9996000032CF /* Build configuration list for PBXNativeTarget "UIPageViewWhithDots" */ = {
+		AC5DCCAC224A9996000032CF /* Build configuration list for PBXNativeTarget "UIPageViewWhithUsDots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC5DCCAD224A9996000032CF /* Debug */,
