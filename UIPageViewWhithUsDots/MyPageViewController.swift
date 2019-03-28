@@ -10,9 +10,12 @@ import UIKit
 
 class MyPageViewController: UIPageViewController {
     
+    weak var myDelegete: MyPageViewControllerDelegate?
+    
     var orderedViewControllers: [UIViewController] = {
         return []
     }()
+    
     
     
     override func viewDidLoad() {
@@ -27,8 +30,10 @@ class MyPageViewController: UIPageViewController {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
         
-        
         self.dataSource = self
+        self.delegate = self
+        
+        myDelegete?.myPageViewController(myPageViewController: self, didUpdatePageCount: orderedViewControllers.count)
     }
     
     func createVC(_ number: Int) {
@@ -89,11 +94,29 @@ extension MyPageViewController: UIPageViewControllerDataSource {
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         guard let firstVC = orderedViewControllers.first,
-        let vcIndex = self.orderedViewControllers.firstIndex(of: firstVC)
+            let vcIndex = self.orderedViewControllers.firstIndex(of: firstVC)
             else { return 0 }
         
         return vcIndex
     }
+}
+
+
+extension MyPageViewController: UIPageViewControllerDelegate {
     
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if let firstVC = viewControllers?.first,
+            let index = orderedViewControllers.firstIndex(of: firstVC) {
+            myDelegete?.myPageViewController(myPageViewController: self, didUpdatePageIndex: index)
+        }
+    }
+}
+
+protocol MyPageViewControllerDelegate: class {
+    
+    func myPageViewController(myPageViewController: MyPageViewController, didUpdatePageCount count: Int)
+    
+    func myPageViewController(myPageViewController: MyPageViewController, didUpdatePageIndex index: Int)
     
 }

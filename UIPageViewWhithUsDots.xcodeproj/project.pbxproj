@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC49A564224D397E004ECD04 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC49A563224D397E004ECD04 /* MyVC.swift */; };
 		AC5DCC9E224A9993000032CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DCC9D224A9993000032CF /* AppDelegate.swift */; };
 		AC5DCCA3224A9993000032CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5DCCA1224A9993000032CF /* Main.storyboard */; };
 		AC5DCCA5224A9996000032CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5DCCA4224A9996000032CF /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC49A563224D397E004ECD04 /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 		AC5DCC9A224A9993000032CF /* UIPageViewWhithUsDots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPageViewWhithUsDots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5DCC9D224A9993000032CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5DCCA2224A9993000032CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				AC5DCCB1224A9C0B000032CF /* MyViewController.swift */,
 				AC5DCC9D224A9993000032CF /* AppDelegate.swift */,
 				AC5DCCA1224A9993000032CF /* Main.storyboard */,
+				AC49A563224D397E004ECD04 /* MyVC.swift */,
 				AC5DCCA4224A9996000032CF /* Assets.xcassets */,
 				AC5DCCA6224A9996000032CF /* LaunchScreen.storyboard */,
 				AC5DCCA9224A9996000032CF /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC49A564224D397E004ECD04 /* MyVC.swift in Sources */,
 				AC5DCC9E224A9993000032CF /* AppDelegate.swift in Sources */,
 				AC5DCCB2224A9C0B000032CF /* MyViewController.swift in Sources */,
 				AC5DCCB0224A9BF8000032CF /* MyPageViewController.swift in Sources */,
